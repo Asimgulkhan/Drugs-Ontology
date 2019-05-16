@@ -1,0 +1,215 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#"
+     xml:base="http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#Approved -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#Approved">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#Drugs"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#FDA"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#Insomnia -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#Insomnia">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#Calpol"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#SideEffects"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#Skin_Rash -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#Skin_Rash">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#Calpol"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#SideEffects"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#HeadQuators -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#HeadQuators">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#FDA"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#jurisdiction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#jurisdiction">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#FDA"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#Aspirin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#Aspirin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#Capsule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#Calpol -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#Calpol">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#Tablet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#Capsule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#Capsule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#DrugsType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#Drugs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#Drugs">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#FDA"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#DrugsType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#DrugsType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#Drugs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#FDA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#FDA"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#SideEffects -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#SideEffects">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#Drugs"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#Tablet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#Tablet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#DrugsType"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#Aspirin_100mg -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#Aspirin_100mg">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#Capsule"/>
+        <Insomnia rdf:resource="http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#Calpol_500mg"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#Aspirin_500mg -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#Aspirin_500mg">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#Capsule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#Calpol_100mg -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#Calpol_100mg">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#Calpol"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#Calpol_500mg -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#Calpol_500mg">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#Calpol"/>
+        <HeadQuators rdf:datatype="&xsd;string">Silver Spring</HeadQuators>
+        <jurisdiction rdf:datatype="&xsd;string">United States</jurisdiction>
+        <Approved rdf:resource="http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#Aspirin_100mg"/>
+        <Skin_Rash rdf:resource="http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#Aspirin_500mg"/>
+        <Approved rdf:resource="http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#Aspirin_500mg"/>
+        <Approved rdf:resource="http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#Calpol_100mg"/>
+        <Approved rdf:resource="http://www.semanticweb.org/asimgul/ontologies/2019/4/untitled-ontology-5#Calpol_500mg"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
